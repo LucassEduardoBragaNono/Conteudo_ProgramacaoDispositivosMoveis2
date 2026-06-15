@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppImcMaui.MainPage">
+
+	<StackLayout Spacing="10" 
+                 Margin="10">
+
+		<Label Text="Calcular o IMC"
+               FontSize="Medium"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+		<Label Text="Qual a sua altura(em metros)?" />
+		<Entry x:Name="altura" Placeholder="Altura em metros... " />
+
+		<Label Text="Qual o seu peso(em quilos)?:" />
+		<Entry x:Name="peso" Placeholder="Peso em quilos" />
+
+		<Button Text="Calcular IMC" Clicked="Button_Clicked" />
+	</StackLayout>
+
+</ContentPage>

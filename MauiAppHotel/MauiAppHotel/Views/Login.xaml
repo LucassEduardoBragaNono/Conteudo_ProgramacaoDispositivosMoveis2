@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Login"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Login" FontSize="24" HorizontalOptions="Center" />
+            
+            <Entry x:Name="txtEmail" Placeholder="E-mail" Keyboard="Email" />
+            
+            <Entry x:Name="txtSenha" Placeholder="Senha" IsPassword="True"/>
+            
+            <Button Text="Login" Clicked="Button_Clicked_Entrar" BackgroundColor="{StaticResource Primary}"/>
+
+            <Button Text="Criar Cadastro" Clicked="Button_Clicked_Cadastro" BackgroundColor="{StaticResource Primary}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

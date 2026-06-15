@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Cadastro"
+             Title="Cadastro">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label 
+                Text="Criar Conta"
+                FontSize="24"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtNome"
+                Placeholder="Nome completo" />
+
+            <Entry
+                x:Name="txtEmail"
+                Placeholder="E-mail"
+                Keyboard="Email" />
+
+            <Entry
+                x:Name="txtSenha"
+                Placeholder="Senha"
+                IsPassword="True" />
+
+            <Entry
+                x:Name="txtConfirmarSenha"
+                Placeholder="Confirmar senha"
+                IsPassword="True" />
+
+            <Button
+                Text="Cadastrar"
+                Clicked="Button_Clicked"
+                BackgroundColor="{StaticResource Primary}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
